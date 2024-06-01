@@ -143,7 +143,7 @@ func simpleAlternative() {
 	}
 }
 
-// `<-west` and `<-north` are the "input" parts of the guards. Each guard can
+// `west?c` and `north?c2` are the "input" parts of the guards. Each guard can
 // have one (optional) input.
 
 // Note that in CSP, just like in Go, if both `west` and `north` are ready,
