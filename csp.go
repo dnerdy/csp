@@ -168,8 +168,8 @@ func alternativeWithBooleanCriteria() {
 	}
 }
 
-// The way this functions is: when entering the select, only keep the cases
-// where the "when" conditions are true; the other cases are removed.
+// The way this function works is: when entering the select, only keep the
+// cases where the "when" conditions are true; the other cases are removed.
 //
 // When x > y, we get:
 
