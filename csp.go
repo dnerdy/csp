@@ -284,17 +284,17 @@ func arrayExampleOne() {
 	for {
 		select {
 		case c := <-console[0]: // when continue[0] == true
-			X <- xinput{i, c}
-			console[i] <- ack{}
-			continue_[i] = c != SIGN_OFF
+			X <- xinput{0, c}
+			console[0] <- ack{}
+			continue_[0] = c != SIGN_OFF
 		case c := <-console[1]: // when continue[1] == true
-			X <- xinput{i, c}
-			console[i] <- ack{}
-			continue_[i] = c != SIGN_OFF
+			X <- xinput{1, c}
+			console[1] <- ack{}
+			continue_[1] = c != SIGN_OFF
 		case c := <-console[2]: // when continue[2] == true
-			X <- xinput{i, c}
-			console[i] <- ack{}
-			continue_[i] = c != SIGN_OFF
+			X <- xinput{2, c}
+			console[2] <- ack{}
+			continue_[2] = c != SIGN_OFF
 		}
 	}
 }
